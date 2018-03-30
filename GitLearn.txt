@@ -1,0 +1,43 @@
+创建一个版本库，创建一个空目录：
+$mkdir learngit
+$cd learngit
+
+把learngit目录变成Git仓库：
+$git init
+
+添加文件到Git仓库：
+$git add <file>
+$git commit -m "注释"
+
+查看仓库当前的状态：
+$git status
+
+查看修改的内容：
+$git diff
+
+查看历史记录：
+$git log
+--pretty=oneline简化历史记录输出信息:
+$git log --pretty=oneline
+
+在Git中，HEAD表示当前版本，HEAD^上一版本，HEAD^^上上一版本，上100个版本HEAD~100
+
+回退到上一版本:
+$git reset --hard HEAD^
+
+回退到某一版本：
+$git reset --hard 版本号
+
+重返未来，确定未来的哪个版本：
+$git reflog
+
+
+
+
+
+
+
+
+
+
+
