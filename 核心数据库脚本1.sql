@@ -2,4 +2,3 @@
 ALTER TABLE pmetal_proxy_merch ADD INDEX `IDX_STATUS` (`STATUS`);
 
 add file
-commit file
