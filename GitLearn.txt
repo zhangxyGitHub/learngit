@@ -39,8 +39,10 @@ $git reflog
 丢弃工作区的修改：
 $git checkout -- <file>...
 
-撤销暂存区的修改：
-$git reset HEAD <file>
+撤销暂存区的修改，重新放回工作区：
+$git reset HEAD <file>...
+
+git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。
 
 
 
