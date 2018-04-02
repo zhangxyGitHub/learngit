@@ -6,7 +6,9 @@ $cd learngit
 $git init
 
 添加文件到Git仓库：
-$git add <file>
+提交工作区到暂存区
+$git add <file>...
+把暂存区的修改提交到分支
 $git commit -m "注释"
 
 查看仓库当前的状态：
@@ -14,6 +16,9 @@ $git status
 
 查看修改的内容：
 $git diff
+
+查看工作区和版本库里面最新版本的区别：
+$git diff HEAD -- <file>
 
 查看历史记录：
 $git log
@@ -30,6 +35,15 @@ $git reset --hard 版本号
 
 重返未来，确定未来的哪个版本：
 $git reflog
+
+丢弃工作区的修改：
+$git checkout -- <file>...
+
+撤销暂存区的修改：
+$git reset HEAD <file>
+
+
+
 
 
 
