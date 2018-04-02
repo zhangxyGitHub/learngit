@@ -49,21 +49,31 @@ git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。
 $git rm <file>...
 
 把一个已有的本地仓库与GitHub仓库关联：
-git remote add origin git@github.com:zhangxyGitHub/learngit.git
+$git remote add origin git@github.com:zhangxyGitHub/learngit.git
 
 git添加远程github仓库的时候提示错误：fatal: remote origin already exists.
 解决办法如下：先删除远程Git仓库，再添加远程仓库关联
-git remote rm origin
+$git remote rm origin
 
 把本地仓库的内容推送到GitHub仓库：
-git push -u origin master
+$git push -u origin master
 
 第一次推送master分支，加上-u参数
 此后，每次本地提交后，只要有必要，就可以使用命令
 git push origin master推送最新修改
 
+从远程库克隆：
+$git clone git@github.com:zhangxyGitHub/gitskills.git
 
 
+创建dev分支，并切换到dev分支：
+$git checkout -b dev
+git checkout命令加上-b参数，表示创建并切换，相当于以下两条命令：
+$git branch dev
+$git checkout dev
+
+查看当前分支：
+$git branch
 
 
 
