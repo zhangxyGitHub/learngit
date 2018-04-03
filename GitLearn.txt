@@ -123,7 +123,39 @@ $git branch --set-upstream branch-name origin/branch-name
 
 从远程抓取分支，使用git pull，如果有冲突，要先处理冲突
 
+--------------------------创建标签--------------------------------------
+查看所有标签：
+$git tag
 
+创建一个标签，默认为HEAD，也可以指定一个commitid
+$git tag <name>
+
+查找历史提交的commitid：
+$git log --pretty=oneline --abbrev-commit
+$git tag <name> commitid
+
+查看标签信息：
+$git show <tagname>
+
+创建带有说明的标签，-a指定标签名，-m指定说明文字
+$git tag -a <tagname> -m "版本v0.1" commitid
+
+创建PGP签名标签，-s用私钥签名一个标签
+$git tag -s <tagname> -m "描述" commitid
+
+--------------------------操作标签--------------------------------------
+如果标签打错了，可以删除标签：
+删除一个本地标签：
+$git tag -d <tagname>
+
+删除一个远程标签：
+$git push origin :refs/tags/<tagname>
+
+推送一个本地标签到远程：
+$git push origin <tagname>
+
+推送全部未推送过的本地标签到远程：
+$git push origin --tags
 
 
 
